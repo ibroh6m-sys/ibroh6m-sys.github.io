@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ibrohim Academy — o'quv markazi, Namangan</title>
+<meta name="description" content="Ibrohim Academy o'quv markazi (Namangan viloyati, Toshbuloq shaharchasi): ingliz tili, IELTS, dasturlash, matematika va maktabga tayyorlov kurslari. Birinchi dars bepul.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="uz_UZ">
+<meta property="og:site_name" content="Ibrohim Academy">
+<meta property="og:title" content="Ibrohim Academy — o'quv markazi, Namangan">
+<meta property="og:description" content="Ingliz tili, IELTS, dasturlash, matematika va maktabga tayyorlov kurslari. Birinchi dars bepul.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Ibrohim Academy","description":"Namangan tumani, Toshbuloq shaharchasidagi o'quv markazi: ingliz tili, IELTS, dasturlash, matematika va maktabga tayyorlov kurslari.","telephone":"+998777184997","address":{"@type":"PostalAddress","addressCountry":"UZ","addressRegion":"Namangan viloyati","addressLocality":"Toshbuloq shaharchasi, Namangan tumani"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#cfe4c6;
+  --bg-2:#bcd7b1;
+  --panel:#f0f7eb;
+  --field:#fbfdf9;
+  --ink:#12301e;
+  --ink-2:#38563f;
+  --line:rgba(18,48,30,.18);
+  --field-line:rgba(18,48,30,.4);
+  --accent:#1c6a3a;
+  --accent-ink:#f4faef;
+  --chalk:#f6d65a;
+  --board:#17402b;
+  --board-ink:#eef6e8;
+  --board-dim:#a9c7b2;
+  --err:#9c2c25;
+  --gutter:clamp(1rem,4vw,2rem);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e2217;
+    --bg-2:#143021;
+    --panel:#173625;
+    --field:#0f281a;
+    --ink:#e4f1dc;
+    --ink-2:#a7c3ae;
+    --line:rgba(228,241,220,.18);
+    --field-line:rgba(228,241,220,.42);
+    --accent:#7fcf94;
+    --accent-ink:#0b1c11;
+    --chalk:#f1d65f;
+    --board:#1f4d35;
+    --board-ink:#eef6e8;
+    --board-dim:#b2cfba;
+    --err:#f0a39c;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e2217;
+  --bg-2:#143021;
+  --panel:#173625;
+  --field:#0f281a;
+  --ink:#e4f1dc;
+  --ink-2:#a7c3ae;
+  --line:rgba(228,241,220,.18);
+  --field-line:rgba(228,241,220,.42);
+  --accent:#7fcf94;
+  --accent-ink:#0b1c11;
+  --chalk:#f1d65f;
+  --board:#1f4d35;
+  --board-ink:#eef6e8;
+  --board-dim:#b2cfba;
+  --err:#f0a39c;
+  color-scheme:dark;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{background:var(--bg);-webkit-text-size-adjust:100%;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 84px)}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font:400 1.0625rem/1.6 "Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+img,svg{max-width:100%}
+a{color:var(--accent)}
+h1,h2,h3{font-weight:700;letter-spacing:-.02em;line-height:1.12;margin:0}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:var(--gutter);top:-4rem;background:var(--ink);color:var(--bg);padding:.6rem 1rem;border-radius:10px;z-index:50;text-decoration:none}
+.skip:focus{top:calc(env(safe-area-inset-top,0px) + .6rem)}
+.wrap{width:min(1120px,calc(100% - 2*var(--gutter)));margin-inline:auto}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  min-height:48px;padding:0 1.5rem;border-radius:999px;border:1.5px solid var(--accent);
+  font:inherit;font-weight:600;cursor:pointer;text-decoration:none;line-height:1.1;text-align:center;
+  transition:background .2s,color .2s;
+}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{background:color-mix(in srgb,var(--accent) 84%,var(--ink))}
+.btn-primary:disabled{opacity:.45;cursor:not-allowed}
+.btn-ghost{background:transparent;color:var(--accent)}
+.btn-ghost:hover{background:color-mix(in srgb,var(--accent) 12%,transparent)}
+.btn-sm{min-height:40px;padding:0 1.1rem;font-size:.95rem}
+
+/* Header */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:1.4rem;min-height:68px}
+.brand{display:flex;align-items:center;gap:.55rem;font-weight:700;font-size:1.2rem;letter-spacing:-.02em;color:var(--ink);text-decoration:none}
+.brand svg{width:30px;height:30px;color:var(--accent);flex:none}
+.spacer{flex:1}
+.main-nav{display:flex;gap:1.5rem}
+.main-nav a{color:var(--ink);text-decoration:none;font-weight:500}
+.main-nav a:hover{text-decoration:underline;text-underline-offset:.35em;text-decoration-thickness:2px}
+.header-phone{display:none;font-weight:600;color:var(--ink);text-decoration:none;white-space:nowrap}
+@media (min-width:1180px){.header-phone{display:block}}
+.menu-btn{display:none;width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;align-items:center;justify-content:center}
+.menu-btn svg{width:22px;height:22px}
+@media (max-width:900px){
+  .menu-btn{display:inline-flex}
+  .main-nav{display:none}
+  .site-header[data-open="true"] .main-nav{
+    display:flex;flex-direction:column;gap:.2rem;position:absolute;left:0;right:0;top:100%;
+    background:var(--bg);padding:.8rem var(--gutter) 1.4rem;border-bottom:1px solid var(--line);
+  }
+  .site-header[data-open="true"] .main-nav a{padding:.6rem 0;font-size:1.15rem}
+}
+
+/* Hero */
+.hero{padding-block:clamp(2.5rem,7vw,5.5rem)}
+.hero-grid{display:grid;gap:clamp(2.2rem,5vw,4rem);grid-template-columns:minmax(0,1fr)}
+@media (min-width:920px){.hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:center}}
+h1{font-size:clamp(2.2rem,5.2vw,3.7rem);line-height:1.04;letter-spacing:-.03em;margin-bottom:1.3rem}
+.lead{font-size:1.2rem;color:var(--ink-2);max-width:44ch;margin:0 0 1.8rem}
+.actions{display:flex;flex-wrap:wrap;gap:.8rem}
+.fine{margin:1.6rem 0 0;color:var(--ink-2);font-size:.98rem;max-width:44ch}
+
+/* Board: today's lessons */
+.board{
+  background:var(--board);color:var(--board-ink);border-radius:24px;
+  padding:clamp(1.2rem,3vw,1.9rem);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);
+}
+.board-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:.3rem 1rem;margin-bottom:.8rem}
+.board h2{font-size:1.45rem}
+.board-date{color:var(--board-dim);font-size:.95rem}
+.lesson{
+  display:grid;grid-template-columns:minmax(5.6rem,auto) minmax(0,1fr) auto;gap:.2rem .9rem;
+  align-items:baseline;padding:.95rem 0;border-top:1px dashed rgba(238,246,232,.25);
+}
+.lesson .t{color:var(--chalk);font-weight:600;font-variant-numeric:tabular-nums}
+.lesson .c strong{font-weight:600}
+.lesson .c small{display:block;color:var(--board-dim);font-size:.88rem;line-height:1.35}
+.lesson .seats{color:var(--board-dim);font-size:.9rem;white-space:nowrap}
+.lesson .seats.low{color:var(--chalk);font-weight:600}
+.lesson.is-done{opacity:.5}
+.now{margin-left:.5rem;padding:.05rem .55rem;border-radius:99px;background:var(--chalk);color:#15301f;font-size:.75rem;font-weight:700;vertical-align:.1em}
+.board-link{display:inline-block;margin-top:.9rem;color:var(--board-ink);font-weight:600}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:no-preference){
+  .board-list.enter .lesson{animation:rise .55s both;animation-delay:calc(var(--i,0) * 90ms + 120ms)}
+}
+
+/* Sections */
+.section{padding-block:clamp(3rem,7vw,5.5rem)}
+.section h2{font-size:clamp(1.8rem,3.6vw,2.5rem);margin-bottom:.6rem}
+.section-lead{color:var(--ink-2);max-width:56ch;margin:0 0 2rem}
+.band{background:var(--bg-2)}
+
+/* Courses */
+.controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin-bottom:.6rem}
+.chip{
+  min-height:42px;padding:0 1.05rem;border-radius:999px;border:1.5px solid var(--field-line);
+  background:transparent;color:var(--ink);font:inherit;font-weight:500;cursor:pointer;
+  transition:background .2s,color .2s;
+}
+.chip:hover{background:color-mix(in srgb,var(--ink) 8%,transparent)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip .today{margin-left:.4rem;font-size:.75rem;opacity:.8}
+.search{
+  flex:1 1 220px;min-width:0;min-height:42px;border-radius:999px;border:1.5px solid var(--field-line);
+  background:var(--field);padding:0 1.1rem;font:inherit;color:var(--ink);
+}
+.search::placeholder{color:var(--ink-2)}
+.count{color:var(--ink-2);font-size:.95rem;margin:0 0 .6rem}
+.course{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.6rem 2rem;padding:1.5rem 0;border-top:1px solid var(--line);align-items:center}
+.course:last-child{border-bottom:1px solid var(--line)}
+.course h3{font-size:1.3rem}
+.course p{margin:.25rem 0 .55rem;color:var(--ink-2);max-width:60ch}
+.course p.meta{margin:0;font-size:.95rem}
+.course-side{display:flex;flex-direction:column;align-items:flex-end;gap:.7rem}
+.price{font-weight:700;font-size:1.25rem;white-space:nowrap;text-align:right}
+.price small{display:block;font-weight:400;font-size:.85rem;color:var(--ink-2)}
+@media (max-width:640px){
+  .course{grid-template-columns:minmax(0,1fr)}
+  .course-side{flex-direction:row;align-items:center;justify-content:space-between}
+  .price{text-align:left}
+}
+.empty{padding:2rem 0;border-top:1px solid var(--line)}
+.empty p{margin:0 0 1rem;max-width:50ch}
+
+/* Schedule */
+.tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.2rem}
+.table-wrap{overflow-x:auto;background:var(--panel);border-radius:20px;padding:.5rem 1.2rem}
+table{width:100%;border-collapse:collapse;min-width:620px}
+th{font-weight:600;text-align:left;color:var(--ink-2);font-size:.92rem;padding:.9rem .7rem}
+td{padding:.95rem .7rem;border-top:1px solid var(--line);vertical-align:middle}
+td.time{font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
+.rest{background:var(--panel);border-radius:20px;padding:1.6rem 1.4rem;margin:0}
+
+/* Teachers */
+.teachers{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:2rem 2.5rem}
+.teacher{display:flex;gap:1rem;align-items:center}
+.avatar{
+  width:60px;height:60px;border-radius:50%;flex:none;display:grid;place-items:center;
+  background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:1.15rem;letter-spacing:.02em;
+}
+.teacher h3{font-size:1.15rem;margin-bottom:.15rem}
+.teacher p{margin:0;color:var(--ink-2);font-size:.95rem;line-height:1.4}
+
+/* Panels, test */
+.split{display:grid;gap:2rem}
+@media (min-width:920px){.split{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:start;gap:4rem}}
+.panel{background:var(--panel);border-radius:24px;padding:clamp(1.3rem,3vw,2.2rem)}
+.progress{height:6px;border-radius:99px;background:var(--line);overflow:hidden;margin-bottom:1.3rem}
+.progress i{display:block;height:100%;background:var(--accent)}
+.step{color:var(--ink-2);font-size:.95rem;margin:0 0 .4rem}
+.q{font-size:1.4rem;font-weight:600;line-height:1.3;margin:0 0 1.2rem;letter-spacing:-.01em}
+.q:focus{outline:none}
+.opts{display:grid;gap:.6rem;margin-bottom:1.4rem}
+.opt{
+  width:100%;text-align:left;min-height:50px;padding:.7rem 1.1rem;border-radius:14px;
+  border:1.5px solid var(--field-line);background:transparent;color:var(--ink);font:inherit;cursor:pointer;
+  transition:border-color .15s,background .15s;
+}
+.opt:hover{border-color:var(--accent)}
+.opt[aria-pressed="true"]{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 14%,transparent);font-weight:600}
+.meta{color:var(--ink-2);font-size:.95rem}
+
+/* Reviews */
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2.2rem}
+blockquote{margin:0;padding-left:1.1rem;border-left:3px solid var(--accent)}
+blockquote p{margin:0;font-size:1.12rem;line-height:1.5}
+blockquote cite{display:block;margin-top:.8rem;font-style:normal;color:var(--ink-2);font-size:.95rem}
+
+/* FAQ */
+.faq{max-width:760px}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.15rem 0;font-weight:600;font-size:1.12rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.6rem;line-height:1;color:var(--accent);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0 0 1.3rem;color:var(--ink-2);max-width:62ch}
+
+/* Registration */
+.contact-list{list-style:none;padding:0;margin:1.8rem 0 0;display:grid;gap:1rem}
+.contact-list b{display:block;font-weight:600}
+.contact-list a{color:var(--ink)}
+.form-row{display:grid;gap:0 1rem}
+@media (min-width:600px){.form-row{grid-template-columns:1fr 1fr}}
+.field{display:grid;gap:.35rem;margin-bottom:1.05rem;align-content:start}
+.field label{font-weight:600;font-size:.95rem}
+.field input,.field select{
+  width:100%;min-height:50px;border-radius:12px;border:1.5px solid var(--field-line);
+  background:var(--field);color:var(--ink);font:inherit;padding:0 .95rem;
+}
+.field select{padding-right:.5rem}
+.field input[aria-invalid="true"],.field select[aria-invalid="true"]{border-color:var(--err)}
+.err{margin:0;color:var(--err);font-size:.9rem;min-height:0}
+.err:empty{display:none}
+.quote{padding:.9rem 1rem;border-radius:12px;background:color-mix(in srgb,var(--accent) 11%,transparent);margin:0 0 1.3rem;font-size:.98rem}
+.quote strong{font-size:1.1rem}
+.success{display:grid;gap:1rem;justify-items:start}
+.success h3{font-size:1.6rem}
+.success h3:focus{outline:none}
+.success p{margin:0;color:var(--ink-2)}
+.summary{display:grid;grid-template-columns:auto 1fr;gap:.45rem 1.2rem;margin:0}
+.summary dt{color:var(--ink-2)}
+.summary dd{margin:0;font-weight:600}
+[hidden]{display:none!important}
+
+footer{padding:2rem 0 2.6rem;border-top:1px solid var(--line);color:var(--ink-2);font-size:.95rem}
+.foot{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;align-items:center}
+footer a{color:var(--ink-2)}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Asosiy qismga o'tish</a>
+
+<header class="site-header" id="top" data-open="false">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Ibrohim Academy, bosh sahifa">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19.5C4.5 10.5 9.5 4.5 19.5 4.5c0 10-6 15-15 15z"/><path d="M4.5 19.5c3-4.5 6.5-7.5 11-9.5"/></svg>
+      Ibrohim Academy
+    </a>
+    <span class="spacer"></span>
+    <nav class="main-nav" id="nav" aria-label="Asosiy menyu">
+      <a href="#kurslar">Kurslar</a>
+      <a href="#jadval">Jadval</a>
+      <a href="#ustozlar">Ustozlar</a>
+      <a href="#test">Daraja testi</a>
+      <a href="#savollar">Savollar</a>
+      <a href="#yozilish">Aloqa</a>
+    </nav>
+    <a class="header-phone" href="tel:+998777184997">+998 77 718 49 97</a>
+    <a class="btn btn-primary btn-sm" href="#yozilish">Yozilish</a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-label="Menyuni ochish" aria-expanded="false" aria-controls="nav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Til, dasturlash va aniq fanlarni kichik guruhlarda o'rganing</h1>
+        <p class="lead">Har bir guruhda 12 tadan ko'p bo'lmagan o'quvchi. Har bir kursning birinchi darsi bepul.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#yozilish">Bepul sinov darsiga yozilish</a>
+          <a class="btn btn-ghost" href="#test">Daraja testini ishlash</a>
+        </div>
+        <p class="fine">Namangan viloyati, Toshbuloq shaharchasi.</p>
+      </div>
+
+      <aside class="board" aria-labelledby="board-title">
+        <div class="board-head">
+          <h2 id="board-title">Bugungi darslar</h2>
+          <span class="board-date" id="board-date"></span>
+        </div>
+        <div class="board-list" id="board-list" role="list"></div>
+        <a class="board-link" href="#jadval">To'liq haftalik jadval</a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="kurslar" aria-labelledby="h-kurslar">
+    <div class="wrap">
+      <h2 id="h-kurslar">Kurslar</h2>
+      <p class="section-lead">Yo'nalishni tanlang yoki nomi bo'yicha qidiring. Narxlar bir oy uchun ko'rsatilgan.</p>
+      <div class="controls">
+        <div class="controls" id="cat-chips" role="group" aria-label="Yo'nalish bo'yicha saralash" style="margin:0"></div>
+        <label class="sr" for="search">Kurs qidirish</label>
+        <input class="search" id="search" type="search" placeholder="Kurs yoki ustoz nomi" autocomplete="off">
+      </div>
+      <p class="count" id="course-count" aria-live="polite"></p>
+      <div id="course-list"><ul><li><strong>Ingliz tili (boshlang'ich)</strong>. Noldan A2 darajagacha.</li><li><strong>IELTS tayyorlov</strong>. Listening, Reading, Writing va Speaking bo'yicha mashq.</li><li><strong>Rus tili</strong>. Kundalik muloqot va grammatika.</li><li><strong>Python asoslari</strong>. Dasturlashga birinchi qadam.</li><li><strong>Frontend: HTML, CSS, JavaScript</strong>. Veb-sayt yaratishni noldan o'rganasiz.</li><li><strong>Matematika (abituriyentlar uchun)</strong>. Oliy o'quv yurtiga kirish imtihoniga tayyorgarlik.</li><li><strong>Maktabga tayyorlov (5–6 yosh)</strong>. O'qish, yozish va sanashni o'yin orqali o'rganish.</li><li><strong>Ingliz tili bolalar uchun (7–10 yosh)</strong>. Alifbo, so'z boyligi va oddiy gaplar.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section" id="jadval" aria-labelledby="h-jadval" style="padding-top:0">
+    <div class="wrap">
+      <h2 id="h-jadval">Dars jadvali</h2>
+      <p class="section-lead">Kunni tanlang va qaysi guruhda bo'sh o'rin borligini ko'ring.</p>
+      <div class="tabs" id="day-tabs" role="group" aria-label="Hafta kunlari"></div>
+      <div id="sched-box"></div>
+    </div>
+  </section>
+
+  <section class="section" id="ustozlar" aria-labelledby="h-ustozlar" style="padding-top:0">
+    <div class="wrap">
+      <h2 id="h-ustozlar">Ustozlar</h2>
+      <p class="section-lead">Darslarni o'z yo'nalishining mutaxassislari olib boradi.</p>
+      <div class="teachers" id="teachers"></div>
+    </div>
+  </section>
+
+  <section class="section band" id="test" aria-labelledby="h-test">
+    <div class="wrap split">
+      <div>
+        <h2 id="h-test">Ingliz tilidan daraja testi</h2>
+        <p class="section-lead" style="margin-bottom:0">6 ta qisqa savol. Natija bo'yicha sizga mos kursni tavsiya qilamiz.</p>
+      </div>
+      <div class="panel" id="quiz"></div>
+    </div>
+  </section>
+
+  <section class="section" id="savollar" aria-labelledby="h-faq">
+    <div class="wrap">
+      <h2 id="h-faq" style="margin-bottom:1.6rem">Ko'p beriladigan savollar</h2>
+      <div class="faq">
+        <details><summary>Sinov darsi bepulmi?</summary><p>Ha. Har bir kursning birinchi darsi bepul. Dars yoqmasa, hech narsa to'lamaysiz.</p></details>
+        <details><summary>Guruhda nechta o'quvchi bo'ladi?</summary><p>Katta guruhlarda 12 tagacha, bolalar guruhlarida 8 tagacha o'quvchi.</p></details>
+        <details><summary>To'lov qanday amalga oshiriladi?</summary><p>To'lov har oy naqd pul yoki karta orqali qabul qilinadi. 3 oylik to'lovga 5%, 6 oylik to'lovga 10% chegirma beriladi.</p></details>
+        <details><summary>Dars qoldirib ketsam nima bo'ladi?</summary><p>Sababli qoldirilgan darsni boshqa guruhda qaytarib olishingiz mumkin. Buning uchun darsdan oldin administratorga xabar bering.</p></details>
+        <details><summary>Kurs oxirida sertifikat beriladimi?</summary><p>Ha, kursni muvaffaqiyatli tugatganlarga markaz sertifikati topshiriladi.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band" id="yozilish" aria-labelledby="h-reg">
+    <div class="wrap split">
+      <div>
+        <h2 id="h-reg">Bepul sinov darsiga yoziling</h2>
+        <p class="section-lead" style="margin-bottom:0">Arizani qoldiring, administrator sizga qo'ng'iroq qilib, qulay vaqtni kelishadi.</p>
+        <ul class="contact-list">
+          <li><b>Manzil</b>Namangan viloyati, Namangan tumani, Toshbuloq shaharchasi</li>
+          <li><b>Telefon</b><a href="tel:+998777184997">+998 77 718 49 97</a></li>
+          <li><b>Ish vaqti</b>Dushanba–Shanba, 08:30–20:00. Yakshanba dam olish kuni.</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <form id="reg-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-name">Ismingiz</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Masalan, Aziza" aria-describedby="err-name">
+              <p class="err" id="err-name" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="f-phone">Telefon raqamingiz</label>
+              <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+998 90 123 45 67" aria-describedby="err-phone">
+              <p class="err" id="err-phone" aria-live="polite"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-course">Kurs</label>
+            <select id="f-course" name="course" aria-describedby="err-course">
+              <option value="">Kursni tanlang</option>
+            </select>
+            <p class="err" id="err-course" aria-live="polite"></p>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-time">Qulay vaqt</label>
+              <select id="f-time" name="time">
+                <option value="Ertalab (09:00–12:00)">Ertalab (09:00–12:00)</option>
+                <option value="Tushdan keyin (12:00–17:00)">Tushdan keyin (12:00–17:00)</option>
+                <option value="Kechqurun (17:00–20:00)">Kechqurun (17:00–20:00)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-months">To'lov muddati</label>
+              <select id="f-months" name="months">
+                <option value="1">1 oy</option>
+                <option value="3">3 oy (5% chegirma)</option>
+                <option value="6">6 oy (10% chegirma)</option>
+              </select>
+            </div>
+          </div>
+          <p class="quote" id="quote" aria-live="polite"></p>
+          <button class="btn btn-primary" type="submit">Ariza yuborish</button>
+        </form>
+        <div class="success" id="reg-done" hidden></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="year">2026</span> Ibrohim Academy o'quv markazi</span>
+    <span><a href="tel:+998777184997">+998 77 718 49 97</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+
+/* ---------- Yordamchi funksiyalar ---------- */
+const $=(s,r=document)=>r.querySelector(s);
+const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+const el=(tag,props={},...kids)=>{
+  const n=document.createElement(tag);
+  for(const [k,v] of Object.entries(props)){
+    if(k==="class")n.className=v;
+    else if(k==="text")n.textContent=v;
+    else if(k.startsWith("on"))n.addEventListener(k.slice(2),v);
+    else if(v===true)n.setAttribute(k,"");
+    else if(v!==false&&v!=null)n.setAttribute(k,v);
+  }
+  kids.flat().forEach(c=>{if(c==null||c===false)return;n.append(c.nodeType?c:document.createTextNode(c));});
+  return n;
+};
+const fmt=n=>String(n).replace(/\B(?=(\d{3})+(?!\d))/g,"\u00A0");
+const toMin=t=>{const [h,m]=t.split(":").map(Number);return h*60+m;};
+const DAYS=["Yakshanba","Dushanba","Seshanba","Chorshanba","Payshanba","Juma","Shanba"];
+const DAYS_SHORT=["Yak","Du","Se","Chor","Pay","Ju","Sha"];
+const MONTHS=["yanvar","fevral","mart","aprel","may","iyun","iyul","avgust","sentabr","oktabr","noyabr","dekabr"];
+const dayKey=d=>(d+6)%7; // dushanba birinchi, yakshanba oxirida
+
+/* ---------- Ma'lumotlar (shu yerdan tahrirlang) ---------- */
+const TEACHERS={
+  madina:{name:"Madina Karimova",role:"Ingliz tili o'qituvchisi",exp:"7 yillik tajriba, CELTA sertifikati"},
+  nilufar:{name:"Nilufar Rahimova",role:"IELTS bo'yicha ustoz",exp:"9 yillik tajriba, IELTS 8.5"},
+  dilfuza:{name:"Dilfuza Ahmedova",role:"Rus tili o'qituvchisi",exp:"12 yillik tajriba"},
+  sherzod:{name:"Sherzod Qodirov",role:"Python va veb-dasturlash ustozi",exp:"6 yillik amaliy tajriba"},
+  jasur:{name:"Jasur Aliyev",role:"Matematika o'qituvchisi",exp:"10 yillik tajriba"},
+  zarina:{name:"Zarina Yusupova",role:"Maktabga tayyorlov o'qituvchisi",exp:"8 yillik tajriba"}
+};
+
+const CATS=[["all","Barchasi"],["til","Tillar"],["it","IT"],["aniq","Aniq fanlar"],["bolalar","Bolalar uchun"]];
+
+const COURSES=[
+  {id:"english-beg",cat:"til",name:"Ingliz tili (boshlang'ich)",desc:"Noldan A2 darajagacha. Darsning yarmi gaplashish va tinglab tushunishga ajratiladi.",months:6,price:350000,teacher:"madina"},
+  {id:"ielts",cat:"til",name:"IELTS tayyorlov",desc:"Listening, Reading, Writing va Speaking bo'yicha mashq, har oyda sinov imtihoni.",months:4,price:550000,teacher:"nilufar"},
+  {id:"russian",cat:"til",name:"Rus tili",desc:"Kundalik muloqot va grammatika. Dars davomida ko'proq gaplashiladi.",months:5,price:300000,teacher:"dilfuza"},
+  {id:"python",cat:"it",name:"Python asoslari",desc:"Dasturlashga birinchi qadam: o'zgaruvchilar, sikllar, funksiyalar va kichik loyihalar.",months:4,price:450000,teacher:"sherzod"},
+  {id:"frontend",cat:"it",name:"Frontend: HTML, CSS, JavaScript",desc:"O'z veb-saytingizni noldan yaratasiz va kurs oxirida portfolio bilan chiqasiz.",months:6,price:500000,teacher:"sherzod"},
+  {id:"math",cat:"aniq",name:"Matematika (abituriyentlar uchun)",desc:"Oliy o'quv yurtiga kirish imtihoni mavzulari, test va masalalar ustida ishlash.",months:8,price:400000,teacher:"jasur"},
+  {id:"kids-prep",cat:"bolalar",name:"Maktabga tayyorlov (5–6 yosh)",desc:"O'qish, yozish va sanashni o'yin orqali o'rgatamiz. Guruhda 8 tagacha bola.",months:5,price:250000,teacher:"zarina"},
+  {id:"kids-english",cat:"bolalar",name:"Ingliz tili bolalar uchun (7–10 yosh)",desc:"Alifbo, so'z boyligi va oddiy gaplar. Darslar qo'shiq va o'yinlar bilan o'tadi.",months:6,price:300000,teacher:"madina"}
+];
+
+// days: 0 = yakshanba, 1 = dushanba ... 6 = shanba
+const SCHEDULE=[
+  {course:"english-beg",days:[1,3,5],start:"09:00",end:"10:30",room:"1-xona",seats:3},
+  {course:"kids-prep",days:[1,3,5],start:"11:00",end:"12:00",room:"4-xona",seats:5},
+  {course:"frontend",days:[1,3,5],start:"15:00",end:"17:00",room:"2-xona",seats:2},
+  {course:"ielts",days:[1,3,5],start:"18:00",end:"19:30",room:"1-xona",seats:4},
+  {course:"russian",days:[2,4],start:"09:00",end:"10:30",room:"1-xona",seats:6},
+  {course:"kids-english",days:[2,4,6],start:"11:00",end:"12:00",room:"3-xona",seats:4},
+  {course:"math",days:[2,4,6],start:"13:00",end:"14:30",room:"3-xona",seats:1},
+  {course:"python",days:[2,4],start:"15:00",end:"17:00",room:"2-xona",seats:3}
+];
+
+// Kurs ma'lumotlarini jadvaldan hisoblaymiz, shunda ular doim mos bo'ladi
+COURSES.forEach(c=>{
+  const s=SCHEDULE.find(x=>x.course===c.id);
+  c.perWeek=s.days.length;
+  c.minutes=toMin(s.end)-toMin(s.start);
+  c.daysLabel=s.days.slice().sort((a,b)=>dayKey(a)-dayKey(b)).map(d=>DAYS_SHORT[d]).join(", ");
+  c.start=s.start;
+});
+const courseById=id=>COURSES.find(c=>c.id===id);
+
+/* ---------- Sarlavha menyusi ---------- */
+const header=$("#top"),menuBtn=$("#menu-btn");
+function setMenu(open){
+  header.dataset.open=String(open);
+  menuBtn.setAttribute("aria-expanded",String(open));
+  menuBtn.setAttribute("aria-label",open?"Menyuni yopish":"Menyuni ochish");
+}
+menuBtn.addEventListener("click",()=>setMenu(header.dataset.open!=="true"));
+$$("#nav a").forEach(a=>a.addEventListener("click",()=>setMenu(false)));
+document.addEventListener("keydown",e=>{if(e.key==="Escape")setMenu(false);});
+
+/* ---------- Bugungi darslar (doska) ---------- */
+function renderBoard(first){
+  const now=new Date();
+  let day=now.getDay(),offset=0;
+  while(!SCHEDULE.some(s=>s.days.includes(day))&&offset<7){day=(day+1)%7;offset++;}
+  $("#board-title").textContent=offset===0?"Bugungi darslar":`Keyingi darslar: ${DAYS[day].toLowerCase()}`;
+  $("#board-date").textContent=offset===0
+    ?`${now.getDate()}-${MONTHS[now.getMonth()]}, ${DAYS[now.getDay()].toLowerCase()}`
+    :`Bugun ${DAYS[now.getDay()].toLowerCase()}, dam olish kuni`;
+  const mins=now.getHours()*60+now.getMinutes();
+  const lessons=SCHEDULE.filter(s=>s.days.includes(day)).sort((a,b)=>toMin(a.start)-toMin(b.start));
+  const list=$("#board-list");
+  list.classList.toggle("enter",!!first);
+  list.replaceChildren(...lessons.map((s,i)=>{
+    const c=courseById(s.course);
+    const st=offset===0?(mins>=toMin(s.end)?"done":(mins>=toMin(s.start)?"now":"")):"";
+    const row=el("div",{class:"lesson"+(st?" is-"+st:""),role:"listitem"},
+      el("span",{class:"t",text:`${s.start}–${s.end}`}),
+      el("span",{class:"c"},
+        el("strong",{text:c.name}),
+        st==="now"?el("span",{class:"now",text:"Hozir"}):null,
+        el("small",{text:`${TEACHERS[c.teacher].name}, ${s.room}`})
+      ),
+      el("span",{class:"seats"+(s.seats<=2?" low":""),text:s.seats?`${s.seats} ta o'rin`:"To'la"})
+    );
+    row.style.setProperty("--i",i);
+    return row;
+  }));
+}
+renderBoard(true);
+setInterval(()=>renderBoard(false),60000);
+
+/* ---------- Kurslar: saralash va qidirish ---------- */
+const state={cat:"all",q:""};
+const chipsEl=$("#cat-chips"),searchEl=$("#search");
+CATS.forEach(([key,label])=>{
+  chipsEl.append(el("button",{type:"button",class:"chip","aria-pressed":String(key===state.cat),"data-cat":key,onclick:()=>{
+    state.cat=key;syncChips();renderCourses();
+  }},label));
+});
+function syncChips(){
+  $$(".chip",chipsEl).forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.cat===state.cat)));
+}
+searchEl.addEventListener("input",()=>{state.q=searchEl.value;renderCourses();});
+function resetFilters(){state.cat="all";state.q="";searchEl.value="";syncChips();renderCourses();}
+
+function renderCourses(){
+  const q=state.q.trim().toLowerCase();
+  const list=COURSES.filter(c=>
+    (state.cat==="all"||c.cat===state.cat)&&
+    (!q||(c.name+" "+c.desc+" "+TEACHERS[c.teacher].name).toLowerCase().includes(q))
+  );
+  $("#course-count").textContent=list.length?`${list.length} ta kurs`:"Kurs topilmadi";
+  const box=$("#course-list");
+  if(!list.length){
+    box.replaceChildren(el("div",{class:"empty"},
+      el("p",{text:"Bunday kurs topilmadi. Qidiruv so'zini o'zgartiring yoki barcha kurslarni ko'ring."}),
+      el("button",{class:"btn btn-ghost btn-sm",type:"button",onclick:resetFilters},"Barcha kurslar")
+    ));
+    return;
+  }
+  box.replaceChildren(...list.map(c=>el("article",{class:"course"},
+    el("div",{},
+      el("h3",{text:c.name}),
+      el("p",{text:c.desc}),
+      el("p",{class:"meta",text:`${c.months} oy, haftada ${c.perWeek} marta (${c.daysLabel}), ${c.minutes} daqiqa`}),
+      el("p",{class:"meta",text:`Ustoz: ${TEACHERS[c.teacher].name}`})
+    ),
+    el("div",{class:"course-side"},
+      el("div",{class:"price"},`${fmt(c.price)} so'm`,el("small",{text:"oyiga"})),
+      el("button",{class:"btn btn-primary btn-sm",type:"button","aria-label":`Yozilish: ${c.name}`,onclick:()=>goRegister(c.id)},"Yozilish")
+    )
+  )));
+}
+renderCourses();
+
+/* ---------- Haftalik jadval ---------- */
+const todayIdx=new Date().getDay();
+let schedDay=todayIdx;
+const tabsEl=$("#day-tabs");
+[1,2,3,4,5,6,0].forEach(d=>{
+  const b=el("button",{type:"button",class:"chip","data-day":d,"aria-pressed":String(d===schedDay),
+    "aria-label":DAYS[d]+(d===todayIdx?" (bugun)":""),onclick:()=>{
+      schedDay=d;
+      $$(".chip",tabsEl).forEach(x=>x.setAttribute("aria-pressed",String(Number(x.dataset.day)===d)));
+      renderTable();
+  }},DAYS_SHORT[d]);
+  if(d===todayIdx)b.append(el("span",{class:"today",text:"bugun"}));
+  tabsEl.append(b);
+});
+function renderTable(){
+  const box=$("#sched-box");
+  const lessons=SCHEDULE.filter(s=>s.days.includes(schedDay)).sort((a,b)=>toMin(a.start)-toMin(b.start));
+  if(!lessons.length){
+    box.replaceChildren(el("p",{class:"rest",text:`${DAYS[schedDay]} dam olish kuni. Darslar dushanba kuni 09:00 da boshlanadi.`}));
+    return;
+  }
+  const head=el("thead",{},el("tr",{},
+    ["Vaqt","Kurs","Ustoz","Xona","Bo'sh o'rin"].map(h=>el("th",{scope:"col",text:h})),
+    el("th",{scope:"col"},el("span",{class:"sr",text:"Amal"}))
+  ));
+  const body=el("tbody",{},lessons.map(s=>{
+    const c=courseById(s.course);
+    return el("tr",{},
+      el("td",{class:"time",text:`${s.start}–${s.end}`}),
+      el("td",{text:c.name}),
+      el("td",{text:TEACHERS[c.teacher].name}),
+      el("td",{text:s.room}),
+      el("td",{text:s.seats?`${s.seats} ta`:"To'la"}),
+      el("td",{},el("button",{class:"btn btn-ghost btn-sm",type:"button","aria-label":`Yozilish: ${c.name}`,onclick:()=>goRegister(c.id)},"Yozilish"))
+    );
+  }));
+  box.replaceChildren(el("div",{class:"table-wrap"},el("table",{"aria-label":`${DAYS[schedDay]} kuni dars jadvali`},head,body)));
+}
+renderTable();
+
+/* ---------- Ustozlar ---------- */
+$("#teachers").replaceChildren(...Object.values(TEACHERS).map(t=>el("div",{class:"teacher"},
+  el("div",{class:"avatar","aria-hidden":"true",text:t.name.split(" ").map(w=>w[0]).join("")}),
+  el("div",{},el("h3",{text:t.name}),el("p",{text:t.role}),el("p",{text:t.exp}))
+)));
+
+/* ---------- Daraja testi ---------- */
+const QUIZ=[
+  {q:"She ___ a teacher.",o:["is","are","am"],a:0},
+  {q:"I ___ coffee every morning.",o:["drink","drinks","drinking"],a:0},
+  {q:"They ___ to the cinema yesterday.",o:["go","went","goes"],a:1},
+  {q:"If it rains tomorrow, we ___ at home.",o:["stay","will stay","stayed"],a:1},
+  {q:"I have lived here ___ 2015.",o:["for","since","from"],a:1},
+  {q:"The report ___ by the manager before the meeting started.",o:["was finished","finished","had been finished"],a:2}
+];
+const LEVELS=[
+  {max:2,name:"A1 (boshlang'ich)",course:"english-beg"},
+  {max:4,name:"A2",course:"english-beg"},
+  {max:6,name:"B1 va undan yuqori",course:"ielts"}
+];
+const quizEl=$("#quiz");
+const Q={i:0,score:0,picked:null,opts:[]};
+const shuffle=a=>a.map(v=>[Math.random(),v]).sort((x,y)=>x[0]-y[0]).map(x=>x[1]);
+const progressBar=(value)=>{
+  const bar=el("i");bar.style.width=`${value/QUIZ.length*100}%`;
+  return el("div",{class:"progress",role:"progressbar","aria-label":"Test jarayoni","aria-valuemin":"0","aria-valuemax":String(QUIZ.length),"aria-valuenow":String(value)},bar);
+};
+function startQuiz(){Q.i=0;Q.score=0;nextQuestion(false);}
+function nextQuestion(focus){
+  const q=QUIZ[Q.i];
+  Q.opts=shuffle(q.o.map((t,idx)=>({t,ok:idx===q.a})));
+  Q.picked=null;
+  const next=el("button",{type:"button",class:"btn btn-primary",disabled:true,onclick:advance},Q.i===QUIZ.length-1?"Natijani ko'rish":"Keyingi savol");
+  const optsEl=el("div",{class:"opts"},Q.opts.map((o,idx)=>el("button",{type:"button",class:"opt","aria-pressed":"false",onclick:()=>{
+    Q.picked=idx;
+    $$(".opt",optsEl).forEach((b,j)=>b.setAttribute("aria-pressed",String(j===idx)));
+    next.disabled=false;
+  }},o.t)));
+  quizEl.replaceChildren(
+    progressBar(Q.i),
+    el("p",{class:"step",text:`Savol ${Q.i+1} / ${QUIZ.length}`}),
+    el("p",{class:"q",id:"q-title",tabindex:"-1",text:q.q}),
+    optsEl,
+    next
+  );
+  if(focus)$("#q-title").focus({preventScroll:true});
+}
+function advance(){
+  if(Q.opts[Q.picked].ok)Q.score++;
+  Q.i++;
+  if(Q.i>=QUIZ.length)showResult();else nextQuestion(true);
+}
+function showResult(){
+  const level=LEVELS.find(l=>Q.score<=l.max);
+  const course=courseById(level.course);
+  quizEl.replaceChildren(
+    progressBar(QUIZ.length),
+    el("p",{class:"q",id:"q-title",tabindex:"-1",text:`Natija: ${Q.score} / ${QUIZ.length}`}),
+    el("p",{},"Taxminiy darajangiz: ",el("strong",{text:level.name}),`. Sizga «${course.name}» kursi mos keladi.`),
+    el("p",{class:"meta",text:"Bu qisqa test. Aniq daraja sinov darsida belgilanadi."}),
+    el("div",{class:"actions",style:"margin-top:1.2rem"},
+      el("button",{class:"btn btn-primary",type:"button",onclick:()=>goRegister(course.id)},"Shu kursga yozilish"),
+      el("button",{class:"btn btn-ghost",type:"button",onclick:()=>{startQuiz();$("#q-title").focus({preventScroll:true});}},"Testni qayta boshlash")
+    )
+  );
+  $("#q-title").focus({preventScroll:true});
+}
+startQuiz();
+
+/* ---------- Yozilish formasi ---------- */
+const form=$("#reg-form"),done=$("#reg-done");
+const fName=$("#f-name"),fPhone=$("#f-phone"),fCourse=$("#f-course"),fTime=$("#f-time"),fMonths=$("#f-months"),quoteEl=$("#quote");
+const DISCOUNT={1:0,3:5,6:10};
+COURSES.forEach(c=>fCourse.append(el("option",{value:c.id,text:c.name})));
+
+function localDigits(v){
+  const d=v.replace(/\D/g,"");
+  if(d.startsWith("998"))return d.slice(3);
+  if("998".startsWith(d))return "";
+  return d;
+}
+function formatPhone(v){
+  const d=localDigits(v).slice(0,9);
+  let o="+998";
+  if(d.length)o+=" "+d.slice(0,2);
+  if(d.length>2)o+=" "+d.slice(2,5);
+  if(d.length>5)o+=" "+d.slice(5,7);
+  if(d.length>7)o+=" "+d.slice(7,9);
+  return o;
+}
+fPhone.addEventListener("focus",()=>{if(!fPhone.value)fPhone.value="+998 ";});
+fPhone.addEventListener("blur",()=>{if(fPhone.value.trim()==="+998")fPhone.value="";});
+fPhone.addEventListener("input",()=>{fPhone.value=formatPhone(fPhone.value);clearErr(fPhone);});
+fName.addEventListener("input",()=>clearErr(fName));
+
+function setErr(input,msg){
+  const err=$("#"+input.id.replace("f-","err-"));
+  input.setAttribute("aria-invalid",msg?"true":"false");
+  err.textContent=msg||"";
+}
+function clearErr(input){if(input.getAttribute("aria-invalid")==="true")setErr(input,"");}
+
+function updateQuote(){
+  const c=courseById(fCourse.value);
+  if(!c){quoteEl.textContent="Kursni tanlasangiz, narx shu yerda ko'rinadi.";return;}
+  const months=Number(fMonths.value),disc=DISCOUNT[months];
+  const total=Math.round(c.price*months*(100-disc)/100);
+  quoteEl.replaceChildren(
+    `Oylik narx: ${fmt(c.price)} so'm. ${months} oy uchun jami: `,
+    el("strong",{text:`${fmt(total)} so'm`}),
+    disc?` (chegirma ${disc}%)`:"",
+    ". Birinchi dars bepul."
+  );
+}
+fCourse.addEventListener("change",()=>{clearErr(fCourse);updateQuote();});
+fMonths.addEventListener("change",updateQuote);
+updateQuote();
+
+function goRegister(id){
+  fCourse.value=id;
+  clearErr(fCourse);
+  updateQuote();
+  if(form.hidden)resetForm();
+  $("#yozilish").scrollIntoView();
+  setTimeout(()=>fName.focus({preventScroll:true}),400);
+}
+window.goRegister=goRegister;
+
+function saveApplication(app){
+  // Namuna: ariza shu brauzerda saqlanadi.
+  // Haqiqiy markaz uchun bu yerda arizani serverga yuboring (Telegram bot, Google Sheets va h.k.).
+  try{
+    const raw=localStorage.getItem("yb_applications");
+    const list=raw?JSON.parse(raw):[];
+    list.push(app);
+    localStorage.setItem("yb_applications",JSON.stringify(list));
+  }catch(e){}
+}
+function summaryRow(k,v){return [el("dt",{text:k}),el("dd",{text:v})];}
+function resetForm(){
+  form.reset();
+  [fName,fPhone,fCourse].forEach(i=>setErr(i,""));
+  updateQuote();
+  done.hidden=true;form.hidden=false;
+}
+form.addEventListener("submit",e=>{
+  e.preventDefault();
+  let first=null;
+  const name=fName.value.trim();
+  if(name.length<2){setErr(fName,"Ismingizni kiriting.");first=first||fName;}else setErr(fName,"");
+  if(localDigits(fPhone.value).length!==9){setErr(fPhone,"Telefon raqamini to'liq kiriting: +998 va yana 9 ta raqam.");first=first||fPhone;}else setErr(fPhone,"");
+  if(!fCourse.value){setErr(fCourse,"Kursni tanlang.");first=first||fCourse;}else setErr(fCourse,"");
+  if(first){first.focus();return;}
+
+  const c=courseById(fCourse.value);
+  const months=Number(fMonths.value),disc=DISCOUNT[months];
+  const total=Math.round(c.price*months*(100-disc)/100);
+  saveApplication({name,phone:fPhone.value,course:c.name,time:fTime.value,months,total,date:new Date().toISOString()});
+
+  done.replaceChildren(
+    el("h3",{id:"done-title",tabindex:"-1",text:`Rahmat, ${name}!`}),
+    el("p",{text:`Arizangiz qabul qilindi. Administrator ${fPhone.value} raqamiga qo'ng'iroq qilib, sinov darsi vaqtini kelishadi.`}),
+    el("dl",{class:"summary"},
+      summaryRow("Kurs",c.name),
+      summaryRow("Qulay vaqt",fTime.value),
+      summaryRow("To'lov muddati",`${months} oy, jami ${fmt(total)} so'm`)
+    ),
+    el("button",{class:"btn btn-ghost",type:"button",onclick:()=>{resetForm();fName.focus();}},"Yana ariza qoldirish")
+  );
+  form.hidden=true;done.hidden=false;
+  $("#done-title").focus({preventScroll:true});
+});
+
+$("#year").textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
